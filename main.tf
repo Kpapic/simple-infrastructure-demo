@@ -1,4 +1,11 @@
+
 terraform {
+	backend "remote" {
+	organization = "ACG-Terraform-Course-Kreso"
+	workspaces {
+		name = "Example-Workspace"
+}
+}
   required_providers {
     aws = {
       source  = "hashicorp/aws"
